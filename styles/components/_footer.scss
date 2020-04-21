@@ -75,7 +75,8 @@
   align-items: center;
 }
 
-.item {
+.item a {
+  color: #333;
   margin: 0 20px;
 }
 
@@ -87,6 +88,10 @@
 
 .copyright, .designer {
   display: none;
+}
+
+.designer a {
+  color: #333;
 }
 
 @media (min-width: $tablet-bp) {
