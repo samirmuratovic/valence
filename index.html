@@ -93,13 +93,13 @@
           <div class="btn btn-2">Request maintenance quote</div>
         </div> -->
         <form name="contact" class="form" method="POST" data-netlify="true">
-          <input type="text" id="name" placeholder="Your name">
+          <input type="text" id="name" name="name" placeholder="Your name">
           <div class="contact-info">
-            <input type="email" id="email" placeholder="Your email address">
-          <input type="tel" id="tel" placeholder="Your cell number">
+            <input type="email" id="email" name="email" placeholder="Your email address">
+          <input type="tel" id="tel" name="tel" placeholder="Your cell number">
           </div>
           
-      <textarea id="message" placeholder="Enter your message here"></textarea>
+      <textarea id="message" name="message" placeholder="Enter your message here"></textarea>
 
           <input type="submit" value="Send">
         </form>
