@@ -1,0 +1,39 @@
+.navbar {
+  align-items: center;
+  // background: yellow;
+  display: flex;
+  height: 7vh;
+  justify-content: space-between;
+  padding: 0 3%;
+  width: 100%;
+}
+
+@media (min-width: $tablet-bp) {
+  .navbar {
+    padding: 0 8%;
+  }
+}
+
+nav {
+  display: flex;
+}
+
+nav li {
+  font-weight: 500;
+  font-size: 10px;
+  list-style: none;
+  margin-left: 35px;
+  text-transform: uppercase;
+}
+
+@media (min-width: $tablet-bp) {
+  nav li {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: $laptop-bp) {
+  nav li {
+    font-size: 14px;
+  }
+}

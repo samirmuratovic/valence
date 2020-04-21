@@ -1,0 +1,111 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Product Sans', helvetica, sans-serif;
+  font-size: $xs-size;
+  font-weight: $font-lt;
+  // overflow: hidden;
+}
+
+h1 {
+  color: #fff;
+  font-size: $m-size;
+  font-weight: $font-md;
+}
+@media (min-width: $tablet-bp) {
+ h1 {
+   font-size: $l-size;
+ } 
+}
+@media (min-width: $laptop-bp) {
+  h1 {
+    font-size: $xl-size;
+  }
+}
+
+h2 {
+  color: #3B556F;
+  font-size: $s-size; 
+  font-weight: $font-md;
+  margin-bottom: 50px;
+}
+@media (min-width: $tablet-bp) {
+ h2 {
+   font-size: $m-size;
+ } 
+}
+@media (min-width: $desktop-bp) {
+  h2 {
+    font-size: $l-size;
+  }
+}
+
+h3 {
+  color: #fff;
+  font-size: $xs-size;
+  font-weight: $font-lt;
+  line-height: 1.5;
+}
+
+@media (min-width: $laptop-bp) {
+  h3 {
+    font-size: $s-size;
+  }
+}
+@media (min-width: $desktop-bp) {
+  h3 {
+    font-size: $m-size;
+  }
+}
+
+h4 {
+  color: #aaa;
+  font-size: $xs-size;
+  font-weight: $font-lt;
+  line-height: 1.8;
+}
+
+@media (min-width: 1400px) {
+  h4 {
+    font-size: $s-size;
+  }
+}
+
+p {
+  color: #444;
+  font-size: 1.2rem;
+  font-weight: $font-lt;
+  line-height: 1.5;
+  margin-bottom: 25px;
+  // width: 70%;
+}
+
+@media (min-width: $tablet-bp) {
+  p {
+    font-size: $xs-size;
+  }
+}
+
+.primary-cta {
+  background: $blue;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: $font-md;
+  padding: 8px 30px;
+  text-decoration: none;
+}
+
+@media (min-width: $tablet-bp) {
+ .primary-cta {
+   padding: 13px 40px;
+ } 
+}
+@media (min-width: $laptop-bp) {
+ .primary-cta {
+   font-size: 14px;
+   padding: 13px 40px;
+ } 
+}

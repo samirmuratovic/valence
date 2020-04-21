@@ -1,0 +1,33 @@
+// Typography
+@font-face {
+  font-family: 'Product Sans';
+  src: url('ProductSans-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Product Sans';
+  src: url('ProductSans-Medium.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+}
+
+$font-lt: 300;
+$font-md: 600;
+
+// Spacing
+$xs-size: 1.6rem;
+$s-size: 1.8rem;
+$m-size: 2.6rem;
+$l-size: 4.4rem;
+$xl-size: 6.5rem;
+$tablet-bp: 37.5rem;
+$laptop-bp: 60rem;
+$desktop-bp: 90rem;
+
+// Color
+$blue: #51A6EB;
+$lt-grey: #808080;
+$grey: #777;
+$dk-grey: #212121;
