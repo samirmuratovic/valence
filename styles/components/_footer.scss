@@ -58,9 +58,11 @@
   bottom: 0;
   color: #fff;
   display: flex;
+  flex-flow: column;
   font-size: 12px;
+  justify-content: center;
   overflow: hidden;
-  padding: 100px 0;
+  padding: 20px 0;
   position: absolute;
   width: 100%;
 }
