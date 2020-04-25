@@ -9,6 +9,10 @@ body {
   // overflow: hidden;
 }
 
+%hover {
+  background: darken($blue, 20%);
+}
+
 h1 {
   color: #fff;
   font-size: $m-size;
@@ -61,7 +65,7 @@ h3 {
 }
 
 h4 {
-  color: #aaa;
+  color: #ccc;
   font-size: $xs-size;
   font-weight: $font-lt;
   line-height: 1.8;
@@ -96,6 +100,10 @@ p {
   font-weight: $font-md;
   padding: 8px 30px;
   text-decoration: none;
+  transition: all 180ms ease-in-out;
+}
+.primary-cta:hover {
+  @extend %hover;
 }
 
 @media (min-width: $tablet-bp) {

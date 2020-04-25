@@ -1,6 +1,6 @@
 .footer {
   align-items: center;
-  background: #000;
+  background: $navy;
   display: flex;
   // height: 100vh;
   margin: 0 auto;
@@ -38,17 +38,28 @@
   text-align: center;
 }
 
-.footer-wrapper h4 {
-  margin-top: 20px;
+.footer-wrapper h1 {
+  margin-bottom: 50px;
+}
+
+.footer-wrapper p {
+  color: #ccc;
+  line-height: 10px;
+  margin: 0;
+  padding: 10px 0;
+}
+
+.footer-wrapper p a {
+  color: #ccc;
 }
 
 .credits {
-  background: #111;
+  background: $blue;
   bottom: 0;
-  color: #333;
+  color: #fff;
   display: flex;
   font-size: 12px;
-  height: 45px;
+  height: 60px;
   overflow: hidden;
   position: absolute;
   width: 100%;
@@ -75,15 +86,24 @@
   align-items: center;
 }
 
-.item a {
-  color: #333;
+.footer-wrapper p a {
+  color: #ccc;
   margin: 0 20px;
+  transition: all 180ms ease-in-out;
+}
+.footer-wrapper p a:hover {
+  color: darken(#ccc, 20%);
 }
 
-@media (min-width: $tablet-bp) {
-  .item {
-    // margin: 0 20px;
-  }
+#Ellipse_1 {
+  fill: #fff;
+}
+#Path_19 {
+  fill: $blue;
+  transition: all 180ms ease-in-out;
+}
+#Ellipse_1:hover ~ #Path_19 {
+  fill: darken($blue, 20%);
 }
 
 .copyright, .designer {
@@ -91,7 +111,11 @@
 }
 
 .designer a {
-  color: #333;
+  color: #fff;
+  transition: all 180ms ease-in-out;
+}
+.designer a:hover {
+  color: darken(#fff, 20%);
 }
 
 @media (min-width: $tablet-bp) {

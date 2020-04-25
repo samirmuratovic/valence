@@ -2,29 +2,29 @@
   // background: lightblue;
   align-items: center;
   display: flex;
-  height: 93vh;
+  height: 91vh;
   justify-content: center;
   overflow: hidden;
   position: relative;
   width: 100%;
+  z-index: 2;
 }
 
 video {
+  overflow: hidden;
   position: relative;
   z-index: -1;
 }
 
-@media (min-aspect-ratio: 16/9) {
+@media (max-width: $tablet-bp) {
   video {
-      width:100%;
-      height: auto;
+    display: none;
   }
-}
-
-@media (max-aspect-ratio: 16/9) {
-  video { 
-      width:auto;
-      height: 100%;
+  .hero {
+    background: url('../../poster.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }
 
@@ -62,13 +62,14 @@ video {
 
 .overlay {
   background: #3B556F;
-  height: 100%;
+  // height: 100%;
   opacity: .80;
   position: absolute;
-  width: 100%;
-  // top: 0;
-  // bottom: 0;
-  // right: 0;
-  // left: 0;
+  // width: 100%;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  overflow: hidden;
+  left: 0;
   z-index: 1;
 }
