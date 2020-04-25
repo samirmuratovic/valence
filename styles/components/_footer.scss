@@ -102,7 +102,7 @@
 }
 
 .copyright, .designer {
-  display: none;
+  // display: none;
 }
 
 .designer a {
@@ -113,8 +113,8 @@
   color: darken(#fff, 20%);
 }
 
-@media (min-width: $tablet-bp) {
+@media screen and (max-width: $tablet-bp) {
   .copyright, .designer {
-    display: block;
+    display: none;
   }
 }
