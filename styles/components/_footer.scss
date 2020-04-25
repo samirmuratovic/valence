@@ -4,7 +4,7 @@
   display: flex;
   // height: 100vh;
   margin: 0 auto;
-  padding: 100px 0;
+  padding: 400px 0;
   position: relative;
   width: 100%;
 }
@@ -103,7 +103,6 @@
 
 .copyright, .designer {
   display: none;
-  visibility: hidden;
 }
 
 .designer a {
@@ -117,6 +116,5 @@
 @media (min-width: $tablet-bp) {
   .copyright, .designer {
     display: block;
-    visibility: visible;
   }
 }
