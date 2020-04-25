@@ -1,65 +1,64 @@
 .footer {
   align-items: center;
-  background: $navy;
+  background: color(navy);
   display: flex;
-  // height: 100vh;
   margin: 0 auto;
   padding: 500px 0;
   position: relative;
   width: 100%;
-}
 
-@media (min-width: $tablet-bp) {
-  .footer {
+  @include tablet {
     height: 100vh;
   }
 }
 
 .footer-wrapper {
   align-items: center;
-  // background: yellow;
   display: flex;
   flex-flow: column;
   justify-content: space-between;
   margin: 0 auto;
-  // padding-top: 150px;
   text-align: center;
   width: 80%;
-}
 
-@media (min-width: $tablet-bp) {
-  .footer-wrapper {
-    width: 700px;
-  } 
-}
+  @include tablet {
+    width: 70rem;
+  }
 
-.footer-wrapper header {
-  margin: 0 auto;
-  text-align: center;
-}
+  header {
+    margin: 0 auto;
+    text-align: center;
+  }
 
-.footer-wrapper h1 {
-  margin-bottom: 50px;
-}
+  h1 {
+    margin-bottom: 50px;
+  }
 
-.footer-wrapper p {
-  color: #ccc;
-  line-height: 10px;
-  margin: 0;
-  padding: 10px 0;
-}
+  p {
+    color: #ccc;
+    line-height: 10px;
+    margin: 0;
+    padding: 10px 0;
 
-.footer-wrapper p a {
-  color: #ccc;
+    a {
+      color: #ccc;
+      margin: 0 20px;
+      @extend %transition;
+
+      &:hover {
+        color: darken(#ccc, 20%);
+      }
+    }
+  }
 }
 
 .credits {
-  background: $blue;
+  background: color(blue);
   bottom: 0;
   color: #fff;
   display: flex;
   flex-flow: column;
-  font-size: 12px;
+  font-size: 1.2rem;
   justify-content: center;
   overflow: hidden;
   padding: 20px 0;
@@ -69,15 +68,13 @@
 
 .credits-wrapper {
   align-items: center;
-  // background: yellow;
   display: flex;
   flex-flow: column;
   justify-content: center;
   margin: 0 auto;
   width: 100%;
-}
-@media (min-width: $tablet-bp) {
-  .credits-wrapper {
+
+  @include tablet {
     flex-flow: row;
     justify-content: space-between;
     padding: 0 5%;
@@ -85,29 +82,20 @@
   }
 }
 
-.footer-wrapper p a {
-  color: #ccc;
-  margin: 0 20px;
-  transition: all 180ms ease-in-out;
-}
-.footer-wrapper p a:hover {
-  color: darken(#ccc, 20%);
-}
-
 #Ellipse_1 {
   fill: #fff;
 }
 #Path_19 {
-  fill: $blue;
-  transition: all 180ms ease-in-out;
+  fill: color(blue);
+  @extend %transition;
 }
 #Ellipse_1:hover ~ #Path_19 {
-  fill: darken($blue, 20%);
+  fill: darken(color(blue), 20%);
 }
 
 .designer a {
   color: #fff;
-  transition: all 180ms ease-in-out;
+  @extend %transition;
 }
 .designer a:hover {
   color: darken(#fff, 20%);
@@ -115,10 +103,8 @@
 
 #facebook {
   margin: 30px 0;
-}
 
-@media (min-width: $tablet-bp) {
-  #facebook {
+  @include tablet {
     margin: 0;
   }
 }

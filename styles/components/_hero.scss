@@ -1,5 +1,4 @@
 .hero {
-  // background: lightblue;
   align-items: center;
   display: flex;
   height: 91vh;
@@ -8,19 +7,8 @@
   position: relative;
   width: 100%;
   z-index: 2;
-}
 
-video {
-  overflow: hidden;
-  position: relative;
-  z-index: -1;
-}
-
-@media (max-width: $tablet-bp) {
-  video {
-    display: none;
-  }
-  .hero {
+  @include tablet {
     background: url('../../poster.jpg');
     background-position: center;
     background-repeat: no-repeat;
@@ -28,9 +16,18 @@ video {
   }
 }
 
+video {
+  overflow: hidden;
+  position: relative;
+  z-index: -1;
+
+  @include tablet {
+    display: none;
+  }
+}
+
 .hero-wrapper {
   align-items: center;
-  // background: lightblue;
   display: flex;
   flex-flow: column;
   height: 250px;
@@ -39,33 +36,25 @@ video {
   text-align: center;
   width: 80%;
   z-index: 2;
-}
 
-@media (min-width: $tablet-bp) {
- .hero-wrapper {
-   width: 70%;
- } 
-}
-@media (min-width: $laptop-bp) {
- .hero-wrapper {
-   height: 300px;
-   width: 50%;
- } 
-}
+  @include tablet {
+    width: 70%;
+  }
 
-@media (min-width: $desktop-bp) {
-  .hero-wrapper {
+  @include laptop {
     height: 300px;
+    width: 50%;
+  }
+
+  @include desktop {
     width: 45%;
   }
 }
 
 .overlay {
-  background: #20354E;
-  // height: 100%;
+  background: #20354e;
   opacity: .95;
   position: absolute;
-  // width: 100%;
   top: 0;
   bottom: 0;
   right: 0;

@@ -1,11 +1,11 @@
 .quotes {
-  background: lightblue;
+  // background: lightblue;
   height: 400px;
   width: 100%;
 }
 
 .card {
-  background: $blue;
+  background: color(blue);
   margin: 0 auto;
   text-align: center;
   position: relative;
@@ -43,21 +43,13 @@
   margin-top: 50px;
 }
 
-
 .card_part.card_part-two {
-  // z-index: 6;
   animation-delay: 5s;
-
 }
 
 .card_part.card_part-three {
-  // z-index: 5;
-
   animation-delay: 10s;
 }
-
-
-
 
 @keyframes opaqTransition {
   3% { transform: translateX( 0 ); }

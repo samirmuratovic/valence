@@ -13,6 +13,7 @@
   font-style: normal;
 }
 
+// Font weight
 $font-lt: 300;
 $font-md: 600;
 
@@ -22,13 +23,40 @@ $s-size: 1.8rem;
 $m-size: 2.6rem;
 $l-size: 4.4rem;
 $xl-size: 6.5rem;
-$tablet-bp: 37.5rem;
-$laptop-bp: 60rem;
-$desktop-bp: 90rem;
+
 
 // Color
-$blue: #51A6EB;
-$navy: #183650;
-$lt-grey: #808080;
-$grey: #777;
-$dk-grey: #212121;
+$colors: (
+  blue: #51a6eb,
+  navy: #183650,
+  grey: #444,
+);
+
+@function color($color-name) {
+  @return map-get($colors, $color-name);
+}
+
+// Breakpoints
+$tablet: 37.5rem;
+$laptop: 60rem;
+$desktop: 90rem;
+
+@mixin tablet {
+  @media (min-width: #{$tablet}) {
+    @content;
+  }
+}
+
+@mixin laptop {
+  @media (min-width: #{$laptop}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$desktop}) {
+    @content;
+  }
+}
+
+
