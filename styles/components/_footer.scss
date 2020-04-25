@@ -4,7 +4,7 @@
   display: flex;
   // height: 100vh;
   margin: 0 auto;
-  padding: 400px 0;
+  padding: 600px 0;
   position: relative;
   width: 100%;
 }
@@ -117,4 +117,9 @@
   .copyright, .designer {
     display: none;
   }
+}
+
+.social a {
+  display: flex;
+  justify-content: center;
 }
