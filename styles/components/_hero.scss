@@ -8,13 +8,6 @@
   position: relative;
   width: 100%;
   z-index: 2;
-
-  @include tablet {
-    background: url('../../poster.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
 }
 
 video {
@@ -26,6 +19,12 @@ video {
 @media screen and (max-width: $tablet) {
   video {
     display: none;
+  }
+  .hero {
+    background: url('../../poster.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }
 
