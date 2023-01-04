@@ -93,11 +93,12 @@
   fill: darken(color(blue), 20%);
 }
 
-.designer a {
+.privacy a {
   color: #fff;
   @extend %transition;
 }
-.designer a:hover {
+
+.privacy a:hover {
   color: darken(#fff, 20%);
 }
 
